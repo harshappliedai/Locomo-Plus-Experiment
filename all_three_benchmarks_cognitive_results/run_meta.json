@@ -1,0 +1,30 @@
+{
+  "bundle": "all_three_benchmarks_cognitive_401",
+  "generated_at_utc": "2026-03-22T17:39:28.728890+00:00",
+  "pool_file": "cognitive_samples_401_seed42.json",
+  "counts": {
+    "pool_samples": 401,
+    "judge_results_rows": 1203,
+    "responses_rows": 1203,
+    "expected_judge_rows": 1203,
+    "errors_rows": 0
+  },
+  "protocol_lock": {
+    "backbone_model": "gpt-4o-mini",
+    "judge_provider": "google",
+    "judge_model": "gemini-2.5-flash",
+    "backbone_temperature": 0.0,
+    "judge_temperature": 0.0,
+    "max_tokens": 512,
+    "query_mode": "unified_conversational_no_task_disclosure",
+    "cognitive_labels": [
+      "correct",
+      "wrong"
+    ],
+    "judge_output_schema": {
+      "label": "string",
+      "reason": "string"
+    },
+    "judge_prompt_sha256": "7174feb3462a2636df0c2632da7634f78ea850e9bf5069ec2ceea607d9551ca1"
+  }
+}

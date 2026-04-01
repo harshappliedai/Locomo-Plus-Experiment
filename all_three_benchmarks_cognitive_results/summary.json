@@ -1,0 +1,47 @@
+{
+  "mem0": {
+    "overall_accuracy": 0.17955112219451372,
+    "total_samples": 401,
+    "by_relation_type": {
+      "value": 0.23300970873786409,
+      "causal": 0.11224489795918367,
+      "state": 0.1368421052631579,
+      "goal": 0.22857142857142856
+    },
+    "by_time_gap_bucket": {
+      "long_3_plus_months": 0.19063545150501673,
+      "short_1_to_2_weeks": 0.16483516483516483,
+      "unknown": 0.0
+    }
+  },
+  "letta": {
+    "overall_accuracy": 0.24189526184538654,
+    "total_samples": 401,
+    "by_relation_type": {
+      "value": 0.2549019607843137,
+      "causal": 0.13,
+      "state": 0.2916666666666667,
+      "goal": 0.2912621359223301
+    },
+    "by_time_gap_bucket": {
+      "long_3_plus_months": 0.2214765100671141,
+      "short_1_to_2_weeks": 0.2826086956521739,
+      "unknown": 0.45454545454545453
+    }
+  },
+  "zep": {
+    "overall_accuracy": 0.22194513715710723,
+    "total_samples": 401,
+    "by_relation_type": {
+      "value": 0.25,
+      "causal": 0.2079207920792079,
+      "state": 0.22,
+      "goal": 0.21
+    },
+    "by_time_gap_bucket": {
+      "long_3_plus_months": 0.20666666666666667,
+      "short_1_to_2_weeks": 0.27472527472527475,
+      "unknown": 0.2
+    }
+  }
+}

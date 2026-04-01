@@ -1,0 +1,761 @@
+{
+  "title": "Cognitive 401 \u2014 final report (mem0, Letta, Zep)",
+  "generated_at_utc": "2026-03-22T17:44:18.427796+00:00",
+  "sources": {
+    "judge_results": "all_three_benchmarks_cognitive_results/judge_results.json",
+    "pool": "all_three_benchmarks_cognitive_results/cognitive_samples_401_seed42.json"
+  },
+  "n_dialogues": 401,
+  "n_judgments": 1203,
+  "overall_correct_wrong": {
+    "mem0": {
+      "correct": 72,
+      "wrong": 329,
+      "n": 401
+    },
+    "letta": {
+      "correct": 97,
+      "wrong": 304,
+      "n": 401
+    },
+    "zep": {
+      "correct": 89,
+      "wrong": 312,
+      "n": 401
+    }
+  },
+  "wilson_95_ci_overall": {
+    "mem0": [
+      0.14508093956835133,
+      0.22010265415586178
+    ],
+    "letta": [
+      0.20255833522092287,
+      0.2861303959110309
+    ],
+    "zep": [
+      0.18401830045697887,
+      0.2651487867044979
+    ]
+  },
+  "summary_metrics_compute_metrics": {
+    "mem0": {
+      "overall_accuracy": 0.17955112219451372,
+      "total_samples": 401,
+      "by_relation_type": {
+        "value": 0.23300970873786409,
+        "causal": 0.11224489795918367,
+        "state": 0.1368421052631579,
+        "goal": 0.22857142857142856
+      },
+      "by_time_gap_bucket": {
+        "long_3_plus_months": 0.19063545150501673,
+        "short_1_to_2_weeks": 0.16483516483516483,
+        "unknown": 0.0
+      }
+    },
+    "letta": {
+      "overall_accuracy": 0.24189526184538654,
+      "total_samples": 401,
+      "by_relation_type": {
+        "value": 0.2549019607843137,
+        "causal": 0.13,
+        "state": 0.2916666666666667,
+        "goal": 0.2912621359223301
+      },
+      "by_time_gap_bucket": {
+        "long_3_plus_months": 0.2214765100671141,
+        "short_1_to_2_weeks": 0.2826086956521739,
+        "unknown": 0.45454545454545453
+      }
+    },
+    "zep": {
+      "overall_accuracy": 0.22194513715710723,
+      "total_samples": 401,
+      "by_relation_type": {
+        "value": 0.25,
+        "causal": 0.2079207920792079,
+        "state": 0.22,
+        "goal": 0.21
+      },
+      "by_time_gap_bucket": {
+        "long_3_plus_months": 0.20666666666666667,
+        "short_1_to_2_weeks": 0.27472527472527475,
+        "unknown": 0.2
+      }
+    }
+  },
+  "pool_distribution_relation_type": {
+    "causal": 101,
+    "goal": 100,
+    "state": 100,
+    "value": 100
+  },
+  "pool_distribution_time_gap_bucket": {
+    "long_3_plus_months": 300,
+    "short_1_to_2_weeks": 91,
+    "unknown": 10
+  },
+  "by_relation_type_canonical_from_pool": {
+    "mem0": {
+      "causal": {
+        "n": 101,
+        "correct": 12,
+        "wrong": 89,
+        "accuracy": 0.1188118811881188,
+        "wilson_95_ci": [
+          0.06928719446185172,
+          0.19627052606081086
+        ]
+      },
+      "goal": {
+        "n": 100,
+        "correct": 23,
+        "wrong": 77,
+        "accuracy": 0.23,
+        "wilson_95_ci": [
+          0.15843265880303448,
+          0.3215438302287378
+        ]
+      },
+      "state": {
+        "n": 100,
+        "correct": 15,
+        "wrong": 85,
+        "accuracy": 0.15,
+        "wilson_95_ci": [
+          0.09305985283656629,
+          0.23283559590832367
+        ]
+      },
+      "value": {
+        "n": 100,
+        "correct": 22,
+        "wrong": 78,
+        "accuracy": 0.22,
+        "wilson_95_ci": [
+          0.15001282384605397,
+          0.310703535149858
+        ]
+      }
+    },
+    "letta": {
+      "causal": {
+        "n": 101,
+        "correct": 13,
+        "wrong": 88,
+        "accuracy": 0.12871287128712872,
+        "wilson_95_ci": [
+          0.07678714443671884,
+          0.20784699892951097
+        ]
+      },
+      "goal": {
+        "n": 100,
+        "correct": 30,
+        "wrong": 70,
+        "accuracy": 0.3,
+        "wilson_95_ci": [
+          0.21894885294932756,
+          0.39584854633346667
+        ]
+      },
+      "state": {
+        "n": 100,
+        "correct": 28,
+        "wrong": 72,
+        "accuracy": 0.28,
+        "wilson_95_ci": [
+          0.20139685211186215,
+          0.3748802870992117
+        ]
+      },
+      "value": {
+        "n": 100,
+        "correct": 26,
+        "wrong": 74,
+        "accuracy": 0.26,
+        "wilson_95_ci": [
+          0.18404698464748137,
+          0.35370989449187185
+        ]
+      }
+    },
+    "zep": {
+      "causal": {
+        "n": 101,
+        "correct": 21,
+        "wrong": 80,
+        "accuracy": 0.2079207920792079,
+        "wilson_95_ci": [
+          0.1402080286238294,
+          0.2970374974909381
+        ]
+      },
+      "goal": {
+        "n": 100,
+        "correct": 21,
+        "wrong": 79,
+        "accuracy": 0.21,
+        "wilson_95_ci": [
+          0.141656540619153,
+          0.29979968834089865
+        ]
+      },
+      "state": {
+        "n": 100,
+        "correct": 22,
+        "wrong": 78,
+        "accuracy": 0.22,
+        "wilson_95_ci": [
+          0.15001282384605397,
+          0.310703535149858
+        ]
+      },
+      "value": {
+        "n": 100,
+        "correct": 25,
+        "wrong": 75,
+        "accuracy": 0.25,
+        "wilson_95_ci": [
+          0.17545211362287677,
+          0.3430446354806161
+        ]
+      }
+    }
+  },
+  "by_time_gap_bucket_canonical_from_pool": {
+    "mem0": {
+      "long_3_plus_months": {
+        "n": 300,
+        "correct": 57,
+        "wrong": 243,
+        "accuracy": 0.19,
+        "wilson_95_ci": [
+          0.14963485033440665,
+          0.23820379182481183
+        ]
+      },
+      "short_1_to_2_weeks": {
+        "n": 91,
+        "correct": 14,
+        "wrong": 77,
+        "accuracy": 0.15384615384615385,
+        "wilson_95_ci": [
+          0.09391213405915473,
+          0.2418214071223777
+        ]
+      },
+      "unknown": {
+        "n": 10,
+        "correct": 1,
+        "wrong": 9,
+        "accuracy": 0.1,
+        "wilson_95_ci": [
+          0.017876213095072924,
+          0.40415002679523854
+        ]
+      }
+    },
+    "letta": {
+      "long_3_plus_months": {
+        "n": 300,
+        "correct": 67,
+        "wrong": 233,
+        "accuracy": 0.22333333333333333,
+        "wilson_95_ci": [
+          0.17987135808006235,
+          0.27379108599751967
+        ]
+      },
+      "short_1_to_2_weeks": {
+        "n": 91,
+        "correct": 25,
+        "wrong": 66,
+        "accuracy": 0.27472527472527475,
+        "wilson_95_ci": [
+          0.19355178327652994,
+          0.37414782288922926
+        ]
+      },
+      "unknown": {
+        "n": 10,
+        "correct": 5,
+        "wrong": 5,
+        "accuracy": 0.5,
+        "wilson_95_ci": [
+          0.23659309051256394,
+          0.7634069094874361
+        ]
+      }
+    },
+    "zep": {
+      "long_3_plus_months": {
+        "n": 300,
+        "correct": 62,
+        "wrong": 238,
+        "accuracy": 0.20666666666666667,
+        "wilson_95_ci": [
+          0.16469552636242532,
+          0.256055016755975
+        ]
+      },
+      "short_1_to_2_weeks": {
+        "n": 91,
+        "correct": 25,
+        "wrong": 66,
+        "accuracy": 0.27472527472527475,
+        "wilson_95_ci": [
+          0.19355178327652994,
+          0.37414782288922926
+        ]
+      },
+      "unknown": {
+        "n": 10,
+        "correct": 2,
+        "wrong": 8,
+        "accuracy": 0.2,
+        "wilson_95_ci": [
+          0.056682151454375246,
+          0.5098375284633583
+        ]
+      }
+    }
+  },
+  "cochran_q": {
+    "description": "H0: equal probability of 'correct' across the three systems (same 401 items)",
+    "statistic": 7.138686131386861,
+    "df": 2,
+    "p_value": 0.028174356303351935
+  },
+  "mcnemar_pairwise": {
+    "mem0_vs_letta": {
+      "contingency_table": {
+        "rows_first_rater_second_rater": [
+          "[both_wrong, first_wrong_second_ok]",
+          "[first_ok_second_wrong, both_ok]"
+        ],
+        "counts": [
+          [
+            269,
+            60
+          ],
+          [
+            35,
+            37
+          ]
+        ]
+      },
+      "n_both_fail": 269,
+      "n_first_ok_second_fail": 35,
+      "n_first_fail_second_ok": 60,
+      "n_both_ok": 37,
+      "p_value": 0.013378703026003939,
+      "statistic": 35.0,
+      "contrast": "mem0 (rows) vs letta (cols) in 2x2 McNemar setup",
+      "holm_adjusted_p": 0.040136109078011815,
+      "holm_reject_alpha_0.05": true
+    },
+    "mem0_vs_zep": {
+      "contingency_table": {
+        "rows_first_rater_second_rater": [
+          "[both_wrong, first_wrong_second_ok]",
+          "[first_ok_second_wrong, both_ok]"
+        ],
+        "counts": [
+          [
+            277,
+            52
+          ],
+          [
+            35,
+            37
+          ]
+        ]
+      },
+      "n_both_fail": 277,
+      "n_first_ok_second_fail": 35,
+      "n_first_fail_second_ok": 52,
+      "n_both_ok": 37,
+      "p_value": 0.08568897435916664,
+      "statistic": 35.0,
+      "contrast": "mem0 (rows) vs zep (cols) in 2x2 McNemar setup",
+      "holm_adjusted_p": 0.17137794871833328,
+      "holm_reject_alpha_0.05": false
+    },
+    "letta_vs_zep": {
+      "contingency_table": {
+        "rows_first_rater_second_rater": [
+          "[both_wrong, first_wrong_second_ok]",
+          "[first_ok_second_wrong, both_ok]"
+        ],
+        "counts": [
+          [
+            262,
+            42
+          ],
+          [
+            50,
+            47
+          ]
+        ]
+      },
+      "n_both_fail": 262,
+      "n_first_ok_second_fail": 50,
+      "n_first_fail_second_ok": 42,
+      "n_both_ok": 47,
+      "p_value": 0.4657074457730623,
+      "statistic": 42.0,
+      "contrast": "letta (rows) vs zep (cols) in 2x2 McNemar setup",
+      "holm_adjusted_p": 0.4657074457730623,
+      "holm_reject_alpha_0.05": false
+    }
+  },
+  "multiple_comparison": {
+    "method": "Holm-Bonferroni",
+    "family": "three pairwise McNemar tests"
+  },
+  "fleiss_kappa_binary": {
+    "description": "Fleiss \u03ba on 3 'raters' (systems), categories wrong(0)/correct(1)",
+    "kappa": 0.32401870308847064
+  },
+  "cohens_kappa_pairwise": {
+    "mem0_vs_letta": {
+      "confusion_counts_rows_mem0_cols_letta": [
+        [
+          269.0,
+          60.0
+        ],
+        [
+          35.0,
+          37.0
+        ]
+      ],
+      "kappa": 0.29192765933718706,
+      "std_kappa": 0.055431531816768284,
+      "z_stat": null,
+      "pvalue": null
+    },
+    "mem0_vs_zep": {
+      "confusion_counts_rows_mem0_cols_zep": [
+        [
+          277.0,
+          52.0
+        ],
+        [
+          35.0,
+          37.0
+        ]
+      ],
+      "kappa": 0.3257899313943377,
+      "std_kappa": 0.056622414203441156,
+      "z_stat": null,
+      "pvalue": null
+    },
+    "letta_vs_zep": {
+      "confusion_counts_rows_letta_cols_zep": [
+        [
+          262.0,
+          42.0
+        ],
+        [
+          50.0,
+          47.0
+        ]
+      ],
+      "kappa": 0.3563852058618283,
+      "std_kappa": 0.054104918916903125,
+      "z_stat": null,
+      "pvalue": null
+    }
+  },
+  "pairwise_label_agreement_rate": {
+    "mem0_vs_letta": 0.7630922693266833,
+    "mem0_vs_zep": 0.7830423940149626,
+    "letta_vs_zep": 0.770573566084788
+  },
+  "agreement_number_correct_systems": {
+    "exactly_0_correct": 237,
+    "exactly_1_correct": 97,
+    "exactly_2_correct": 40,
+    "exactly_3_correct": 27
+  },
+  "pattern_counts_mem0_letta_zep_binary": {
+    "(0, 0, 0)": 237,
+    "(0, 1, 1)": 20,
+    "(0, 1, 0)": 40,
+    "(1, 0, 0)": 25,
+    "(1, 1, 0)": 10,
+    "(0, 0, 1)": 32,
+    "(1, 1, 1)": 27,
+    "(1, 0, 1)": 10
+  },
+  "sample_ids_all_three_correct": [
+    "cog_0038",
+    "cog_0039",
+    "cog_0045",
+    "cog_0047",
+    "cog_0059",
+    "cog_0061",
+    "cog_0080",
+    "cog_0085",
+    "cog_0113",
+    "cog_0139",
+    "cog_0141",
+    "cog_0147",
+    "cog_0208",
+    "cog_0224",
+    "cog_0229",
+    "cog_0248",
+    "cog_0251",
+    "cog_0254",
+    "cog_0257",
+    "cog_0325",
+    "cog_0327",
+    "cog_0333",
+    "cog_0347",
+    "cog_0373",
+    "cog_0395",
+    "cog_0398",
+    "cog_0401"
+  ],
+  "sample_ids_all_three_wrong": [
+    "cog_0001",
+    "cog_0002",
+    "cog_0003",
+    "cog_0005",
+    "cog_0006",
+    "cog_0008",
+    "cog_0009",
+    "cog_0010",
+    "cog_0011",
+    "cog_0012",
+    "cog_0014",
+    "cog_0015",
+    "cog_0016",
+    "cog_0017",
+    "cog_0021",
+    "cog_0022",
+    "cog_0023",
+    "cog_0024",
+    "cog_0026",
+    "cog_0029",
+    "cog_0030",
+    "cog_0032",
+    "cog_0033",
+    "cog_0034",
+    "cog_0035",
+    "cog_0036",
+    "cog_0037",
+    "cog_0040",
+    "cog_0042",
+    "cog_0043",
+    "cog_0044",
+    "cog_0049",
+    "cog_0052",
+    "cog_0053",
+    "cog_0055",
+    "cog_0057",
+    "cog_0060",
+    "cog_0065",
+    "cog_0066",
+    "cog_0068",
+    "cog_0070",
+    "cog_0071",
+    "cog_0073",
+    "cog_0074",
+    "cog_0076",
+    "cog_0078",
+    "cog_0081",
+    "cog_0086",
+    "cog_0088",
+    "cog_0091",
+    "cog_0093",
+    "cog_0095",
+    "cog_0096",
+    "cog_0097",
+    "cog_0100",
+    "cog_0101",
+    "cog_0104",
+    "cog_0106",
+    "cog_0107",
+    "cog_0108",
+    "cog_0109",
+    "cog_0110",
+    "cog_0114",
+    "cog_0115",
+    "cog_0116",
+    "cog_0117",
+    "cog_0118",
+    "cog_0119",
+    "cog_0121",
+    "cog_0123",
+    "cog_0125",
+    "cog_0126",
+    "cog_0128",
+    "cog_0129",
+    "cog_0130",
+    "cog_0131",
+    "cog_0135",
+    "cog_0140",
+    "cog_0145",
+    "cog_0146",
+    "cog_0148",
+    "cog_0149",
+    "cog_0151",
+    "cog_0153",
+    "cog_0154",
+    "cog_0155",
+    "cog_0156",
+    "cog_0157",
+    "cog_0158",
+    "cog_0159",
+    "cog_0161",
+    "cog_0162",
+    "cog_0163",
+    "cog_0164",
+    "cog_0165",
+    "cog_0166",
+    "cog_0167",
+    "cog_0169",
+    "cog_0170",
+    "cog_0173",
+    "cog_0174",
+    "cog_0176",
+    "cog_0177",
+    "cog_0178",
+    "cog_0179",
+    "cog_0180",
+    "cog_0181",
+    "cog_0183",
+    "cog_0184",
+    "cog_0185",
+    "cog_0188",
+    "cog_0189",
+    "cog_0191",
+    "cog_0192",
+    "cog_0193",
+    "cog_0196",
+    "cog_0198",
+    "cog_0201",
+    "cog_0203",
+    "cog_0205",
+    "cog_0207",
+    "cog_0209",
+    "cog_0210",
+    "cog_0211",
+    "cog_0212",
+    "cog_0213",
+    "cog_0214",
+    "cog_0215",
+    "cog_0216",
+    "cog_0217",
+    "cog_0218",
+    "cog_0219",
+    "cog_0220",
+    "cog_0221",
+    "cog_0223",
+    "cog_0225",
+    "cog_0227",
+    "cog_0230",
+    "cog_0231",
+    "cog_0233",
+    "cog_0236",
+    "cog_0238",
+    "cog_0239",
+    "cog_0241",
+    "cog_0243",
+    "cog_0244",
+    "cog_0245",
+    "cog_0246",
+    "cog_0249",
+    "cog_0250",
+    "cog_0258",
+    "cog_0260",
+    "cog_0261",
+    "cog_0262",
+    "cog_0263",
+    "cog_0264",
+    "cog_0266",
+    "cog_0267",
+    "cog_0268",
+    "cog_0269",
+    "cog_0272",
+    "cog_0273",
+    "cog_0274",
+    "cog_0276",
+    "cog_0277",
+    "cog_0279",
+    "cog_0280",
+    "cog_0283",
+    "cog_0285",
+    "cog_0287",
+    "cog_0288",
+    "cog_0289",
+    "cog_0291",
+    "cog_0295",
+    "cog_0296",
+    "cog_0297",
+    "cog_0300",
+    "cog_0301",
+    "cog_0302",
+    "cog_0304",
+    "cog_0305",
+    "cog_0306",
+    "cog_0307",
+    "cog_0309",
+    "cog_0310",
+    "cog_0311",
+    "cog_0315",
+    "cog_0316",
+    "cog_0323",
+    "cog_0324",
+    "cog_0326",
+    "cog_0329",
+    "cog_0330",
+    "cog_0331",
+    "cog_0336",
+    "cog_0337",
+    "cog_0338",
+    "cog_0339",
+    "cog_0340",
+    "cog_0342",
+    "cog_0343",
+    "cog_0344",
+    "cog_0346",
+    "cog_0348",
+    "cog_0350",
+    "cog_0352",
+    "cog_0354",
+    "cog_0356",
+    "cog_0357",
+    "cog_0358",
+    "cog_0359",
+    "cog_0361",
+    "cog_0362",
+    "cog_0364",
+    "cog_0365",
+    "cog_0366",
+    "cog_0367",
+    "cog_0369",
+    "cog_0370",
+    "cog_0371",
+    "cog_0374",
+    "cog_0375",
+    "cog_0379",
+    "cog_0380",
+    "cog_0382",
+    "cog_0383",
+    "cog_0384",
+    "cog_0386",
+    "cog_0387",
+    "cog_0388",
+    "cog_0389",
+    "cog_0390",
+    "cog_0391",
+    "cog_0394",
+    "cog_0396",
+    "cog_0397",
+    "cog_0400"
+  ]
+}

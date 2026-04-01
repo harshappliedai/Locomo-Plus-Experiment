@@ -1,0 +1,70 @@
+{
+  "description": "Pooled significance analysis: all sample IDs with complete Mem0 + Letta + Zep judgments (n=353 complete triples). For the analysis restricted to the 401-pool only (n=206), see significance_letta_mem0_zep_cognitive401_pool.json.",
+  "counts": {
+    "unique_sample_ids_any_system": 359,
+    "complete_triples": 353,
+    "incomplete_dropped": 6
+  },
+  "systems": {
+    "mem0": {
+      "correct": 66,
+      "accuracy": 0.186969,
+      "wilson_95_ci": [
+        0.149746,
+        0.230932
+      ]
+    },
+    "letta": {
+      "correct": 88,
+      "accuracy": 0.249292,
+      "wilson_95_ci": [
+        0.207025,
+        0.296957
+      ]
+    },
+    "zep": {
+      "correct": 78,
+      "accuracy": 0.220963,
+      "wilson_95_ci": [
+        0.180815,
+        0.267119
+      ]
+    }
+  },
+  "cochran_q": {
+    "statistic": 5.918699,
+    "p_value": 0.051853,
+    "df": 2,
+    "interpretation": "Overall test for differences among three systems on the same pooled items."
+  },
+  "mcnemar_pairwise": {
+    "mem0_vs_letta": {
+      "n_both_fail": 234,
+      "n_mem0_ok_letta_fail": 31,
+      "n_mem0_fail_letta_ok": 53,
+      "n_both_ok": 35,
+      "p_value": 0.021383189937144585,
+      "holm_adjusted_p": 0.06415
+    },
+    "mem0_vs_zep": {
+      "n_both_fail": 241,
+      "n_mem0_ok_zep_fail": 34,
+      "n_mem0_fail_zep_ok": 46,
+      "n_both_ok": 32,
+      "p_value": 0.21851803947870374,
+      "holm_adjusted_p": 0.437036
+    },
+    "letta_vs_zep": {
+      "n_both_fail": 229,
+      "n_letta_ok_zep_fail": 46,
+      "n_letta_fail_zep_ok": 36,
+      "n_both_ok": 42,
+      "p_value": 0.3202933636380142,
+      "holm_adjusted_p": 0.437036
+    }
+  },
+  "multiple_comparison": {
+    "method": "Holm-Bonferroni",
+    "family": "three pairwise McNemar tests"
+  }
+}

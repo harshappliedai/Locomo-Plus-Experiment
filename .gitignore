@@ -1,0 +1,104 @@
+# Virtual env / bytecode
+.venv/
+__pycache__/
+.pycache/
+*.pyc
+.DS_Store
+
+# Secrets
+.env
+
+# Upstream dataset (has its own .git)
+data/locomo_plus/
+
+# Local Mem0 vector store
+mem0_store/
+
+# Paper PDF (do not redistribute)
+2602.10715v1 (1).pdf
+
+# ---------- Two-system (Mem0 vs Letta) era artifacts ----------
+REPORT.md
+results_report/
+harsh_report/
+cognitive_stats.json
+cognitive_stats_100.json
+cognitive_stats_150.json
+cognitive_stats_50.json
+
+# ---------- All intermediate / per-run result dirs ----------
+results/
+results_cognitive10/
+results_cognitive100/
+results_cognitive100_exclude150/
+results_cognitive150_nonoverlap/
+results_cognitive150_nonoverlap_rejudge/
+results_cognitive401_gap1_mem0/
+results_cognitive401_gap5_zep/
+results_cognitive401_outside42/
+results_cognitive401_remaining109/
+results_cognitive_all_runs_rejudge/
+results_cognitive_all_together_rejudge/
+results_cognitive_random10_seed9042/
+results_cognitive_smoke2/
+results_cognitive_smoke2_judged/
+results_combined200/
+results_factual100/
+results_factual200_more/
+results_factual3check/
+results_factual5/
+results_full5/
+results_full50/
+results_graphiti/
+results_graphiti_10/
+results_graphiti_10_rejudge/
+results_quick5/
+results_smoke3_mem0_letta_zep/
+results_smoke3_mem0_letta_zep_rerun/
+results_zep150_nonoverlap/
+results_zep150_nonoverlap_fixed/
+results_zep150_nonoverlap_retry/
+results_zep30_nonoverlap_smoke/
+results_zep_10/
+results_zep_smoke2/
+
+# ---------- Graphiti / partial significance / misc ----------
+results_graphiti_graph_search_5.json
+significance_letta_mem0_zep_150_100.json
+
+# ---------- Intermediate data files (keep only 401 pool + seeds doc) ----------
+data/cognitive_100_exclude150_seed77331.json
+data/cognitive_401_coverage_report.json
+data/cognitive_401_outside_150_100_109.json
+data/cognitive_401_remaining_3way.json
+data/cognitive_401_remaining_mem0_letta_zep.json
+data/cognitive_401_remaining_zep_only.json
+data/cognitive_gap1_mem0.json
+data/cognitive_gap5_zep.json
+data/cognitive_random10_seed9042.json
+data/cognitive_samples.json
+data/cognitive_samples_100.json
+data/cognitive_samples_150_nonoverlap.json
+data/cognitive_samples_30_nonoverlap_smoke.json
+data/cognitive_samples_5.json
+data/cognitive_samples_5_short.json
+data/cognitive_samples_50.json
+data/cognitive_samples_random50.json
+data/cognitive_samples_smoke.json
+data/cognitive_samples_smoke10.json
+data/cognitive_samples_smoke2.json
+data/cognitive_smoke3_seed2026.json
+data/factual_samples_100.json
+data/factual_samples_200_more.json
+
+# Error logs
+all_three_benchmarks_cognitive_results/errors.json
+
+# ---------- Two-system-only / internal-only scripts ----------
+scripts/combine_cognitive_runs.py
+scripts/combine_results.py
+scripts/prepare_factual_data.py
+scripts/merge_all_three_cognitive_401.py
+scripts/report_cognitive_401_coverage.py
+scripts/cognitive_stats.py
+scripts/run_factual_benchmark.py

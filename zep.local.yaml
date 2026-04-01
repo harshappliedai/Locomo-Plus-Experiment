@@ -1,0 +1,22 @@
+# Local config template for zepai/zep container.
+# If your Zep image version expects different keys, adjust accordingly.
+
+api_secret: local-dev-token
+
+http:
+  host: 0.0.0.0
+  port: 8000
+
+postgres:
+  host: db
+  port: 5432
+  user: postgres
+  password: postgres
+  database: zep
+  schema_name: public
+
+graphiti:
+  service_url: http://graphiti:8000
+
+telemetry:
+  disabled: true

@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "note": "See run_meta.json for protocol details",
+  "protocol_lock": {
+    "backbone_model": "gpt-4o-mini",
+    "judge_provider": "google",
+    "judge_model": "gemini-2.5-flash",
+    "backbone_temperature": 0.0,
+    "judge_temperature": 0.0,
+    "max_tokens": 512,
+    "query_mode": "unified_conversational_no_task_disclosure",
+    "cognitive_labels": [
+      "correct",
+      "wrong"
+    ],
+    "judge_output_schema": {
+      "label": "string",
+      "reason": "string"
+    },
+    "judge_prompt_sha256": "7174feb3462a2636df0c2632da7634f78ea850e9bf5069ec2ceea607d9551ca1"
+  }
+}

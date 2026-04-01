@@ -1,0 +1,137 @@
+{
+  "description": "Statistical significance tests on the cognitive_samples_401_seed42.json pool (n=206 complete triples with all three systems judged).",
+  "pool_N": 401,
+  "counts": {
+    "items_with_any_judgment_in_pool": 209,
+    "complete_triples_mem0_letta_zep": 206,
+    "incomplete_within_these_batches": 3,
+    "pool_coverage_complete_triples": 0.513716
+  },
+  "incomplete_sample_ids": [
+    "cog_0042",
+    "cog_0118",
+    "cog_0353"
+  ],
+  "systems": {
+    "mem0": {
+      "correct": 36,
+      "accuracy": 0.174757,
+      "wilson_95_ci": [
+        0.128986,
+        0.232437
+      ]
+    },
+    "letta": {
+      "correct": 48,
+      "accuracy": 0.23301,
+      "wilson_95_ci": [
+        0.18049,
+        0.295304
+      ]
+    },
+    "zep": {
+      "correct": 45,
+      "accuracy": 0.218447,
+      "wilson_95_ci": [
+        0.167458,
+        0.279743
+      ]
+    }
+  },
+  "cochran_q": {
+    "statistic": 3.714286,
+    "p_value": 0.156118,
+    "df": 2
+  },
+  "mcnemar_pairwise": {
+    "mem0_vs_letta": {
+      "n_both_fail": 142,
+      "n_mem0_ok_letta_fail": 16,
+      "n_mem0_fail_letta_ok": 28,
+      "n_both_ok": 20,
+      "p_value": 0.09614175442061423,
+      "holm_adjusted_p": 0.288425
+    },
+    "mem0_vs_zep": {
+      "n_both_fail": 143,
+      "n_mem0_ok_zep_fail": 18,
+      "n_mem0_fail_zep_ok": 27,
+      "n_both_ok": 18,
+      "p_value": 0.23269319190831084,
+      "holm_adjusted_p": 0.465386
+    },
+    "letta_vs_zep": {
+      "n_both_fail": 141,
+      "n_letta_ok_zep_fail": 20,
+      "n_letta_fail_zep_ok": 17,
+      "n_both_ok": 28,
+      "p_value": 0.7428293587290682,
+      "holm_adjusted_p": 0.742829
+    }
+  },
+  "multiple_comparison": {
+    "method": "Holm-Bonferroni",
+    "family": "three pairwise McNemar tests"
+  },
+  "extension_150_nonoverlap": {
+    "description": "Separate 150-item pool with non-overlapping sample IDs. Reported for completeness.",
+    "n": 147,
+    "systems": {
+      "mem0": {
+        "correct": 30,
+        "accuracy": 0.204082,
+        "wilson_95_ci": [
+          0.146861,
+          0.276374
+        ]
+      },
+      "letta": {
+        "correct": 40,
+        "accuracy": 0.272109,
+        "wilson_95_ci": [
+          0.206654,
+          0.349171
+        ]
+      },
+      "zep": {
+        "correct": 33,
+        "accuracy": 0.22449,
+        "wilson_95_ci": [
+          0.164552,
+          0.29846
+        ]
+      }
+    },
+    "cochran_q": {
+      "statistic": 2.633333,
+      "p_value": 0.268027,
+      "df": 2
+    },
+    "mcnemar_pairwise": {
+      "mem0_vs_letta": {
+        "n_both_fail": 92,
+        "n_mem0_ok_letta_fail": 15,
+        "n_mem0_fail_letta_ok": 25,
+        "n_both_ok": 15,
+        "p_value": 0.1538599441628321,
+        "holm_adjusted_p": 0.46158
+      },
+      "mem0_vs_zep": {
+        "n_both_fail": 98,
+        "n_mem0_ok_zep_fail": 16,
+        "n_mem0_fail_zep_ok": 19,
+        "n_both_ok": 14,
+        "p_value": 0.735878800856881,
+        "holm_adjusted_p": 0.742596
+      },
+      "letta_vs_zep": {
+        "n_both_fail": 88,
+        "n_letta_ok_zep_fail": 26,
+        "n_letta_fail_zep_ok": 19,
+        "n_both_ok": 14,
+        "p_value": 0.3712980344710104,
+        "holm_adjusted_p": 0.742596
+      }
+    }
+  }
+}

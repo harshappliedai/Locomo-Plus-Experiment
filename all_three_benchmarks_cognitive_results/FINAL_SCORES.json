@@ -1,0 +1,327 @@
+{
+  "title": "Final scores \u2014 cognitive 401 pool, all three systems",
+  "source": "all_three_benchmarks_cognitive_results/judge_results.json",
+  "n_samples": 401,
+  "n_judgments": 1203,
+  "systems": {
+    "mem0": {
+      "correct": 72,
+      "n": 401,
+      "accuracy": 0.17955112219451372,
+      "wilson_95_ci": [
+        0.14508093956835133,
+        0.22010265415586178
+      ]
+    },
+    "letta": {
+      "correct": 97,
+      "n": 401,
+      "accuracy": 0.24189526184538654,
+      "wilson_95_ci": [
+        0.20255833522092287,
+        0.2861303959110309
+      ]
+    },
+    "zep": {
+      "correct": 89,
+      "n": 401,
+      "accuracy": 0.22194513715710723,
+      "wilson_95_ci": [
+        0.18401830045697887,
+        0.2651487867044979
+      ]
+    }
+  },
+  "overall_accuracy_from_summary": {
+    "mem0": 0.17955112219451372,
+    "letta": 0.24189526184538654,
+    "zep": 0.22194513715710723
+  },
+  "by_relation_type": {
+    "mem0": {
+      "value": 0.23300970873786409,
+      "causal": 0.11224489795918367,
+      "state": 0.1368421052631579,
+      "goal": 0.22857142857142856
+    },
+    "letta": {
+      "value": 0.2549019607843137,
+      "causal": 0.13,
+      "state": 0.2916666666666667,
+      "goal": 0.2912621359223301
+    },
+    "zep": {
+      "value": 0.25,
+      "causal": 0.2079207920792079,
+      "state": 0.22,
+      "goal": 0.21
+    }
+  },
+  "by_time_gap_bucket": {
+    "mem0": {
+      "long_3_plus_months": 0.19063545150501673,
+      "short_1_to_2_weeks": 0.16483516483516483,
+      "unknown": 0.0
+    },
+    "letta": {
+      "long_3_plus_months": 0.2214765100671141,
+      "short_1_to_2_weeks": 0.2826086956521739,
+      "unknown": 0.45454545454545453
+    },
+    "zep": {
+      "long_3_plus_months": 0.20666666666666667,
+      "short_1_to_2_weeks": 0.27472527472527475,
+      "unknown": 0.2
+    }
+  },
+  "by_relation_type_detail": {
+    "mem0": {
+      "causal": {
+        "n": 98,
+        "correct": 11,
+        "accuracy": 0.11224489795918367,
+        "wilson_95_ci": [
+          0.06384269945885745,
+          0.18989933369673162
+        ]
+      },
+      "goal": {
+        "n": 105,
+        "correct": 24,
+        "accuracy": 0.22857142857142856,
+        "wilson_95_ci": [
+          0.1586839284694142,
+          0.3176185704349597
+        ]
+      },
+      "state": {
+        "n": 95,
+        "correct": 13,
+        "accuracy": 0.1368421052631579,
+        "wilson_95_ci": [
+          0.08174793559632482,
+          0.2201644317112924
+        ]
+      },
+      "value": {
+        "n": 103,
+        "correct": 24,
+        "accuracy": 0.23300970873786409,
+        "wilson_95_ci": [
+          0.16187608389419225,
+          0.3233424763249889
+        ]
+      }
+    },
+    "letta": {
+      "causal": {
+        "n": 100,
+        "correct": 13,
+        "accuracy": 0.13,
+        "wilson_95_ci": [
+          0.0775716742724051,
+          0.2098035144007643
+        ]
+      },
+      "goal": {
+        "n": 103,
+        "correct": 30,
+        "accuracy": 0.2912621359223301,
+        "wilson_95_ci": [
+          0.21228943291717486,
+          0.38524507779963946
+        ]
+      },
+      "state": {
+        "n": 96,
+        "correct": 28,
+        "accuracy": 0.2916666666666667,
+        "wilson_95_ci": [
+          0.21016592525216687,
+          0.3891989030218646
+        ]
+      },
+      "value": {
+        "n": 102,
+        "correct": 26,
+        "accuracy": 0.2549019607843137,
+        "wilson_95_ci": [
+          0.18029658418266675,
+          0.34729874039893277
+        ]
+      }
+    },
+    "zep": {
+      "causal": {
+        "n": 101,
+        "correct": 21,
+        "accuracy": 0.2079207920792079,
+        "wilson_95_ci": [
+          0.1402080286238294,
+          0.2970374974909381
+        ]
+      },
+      "goal": {
+        "n": 100,
+        "correct": 21,
+        "accuracy": 0.21,
+        "wilson_95_ci": [
+          0.141656540619153,
+          0.29979968834089865
+        ]
+      },
+      "state": {
+        "n": 100,
+        "correct": 22,
+        "accuracy": 0.22,
+        "wilson_95_ci": [
+          0.15001282384605397,
+          0.310703535149858
+        ]
+      },
+      "value": {
+        "n": 100,
+        "correct": 25,
+        "accuracy": 0.25,
+        "wilson_95_ci": [
+          0.17545211362287677,
+          0.3430446354806161
+        ]
+      }
+    }
+  },
+  "by_time_gap_bucket_detail": {
+    "mem0": {
+      "long_3_plus_months": {
+        "n": 299,
+        "correct": 57,
+        "accuracy": 0.19063545150501673,
+        "wilson_95_ci": [
+          0.15014602953187028,
+          0.238973278239215
+        ]
+      },
+      "short_1_to_2_weeks": {
+        "n": 91,
+        "correct": 15,
+        "accuracy": 0.16483516483516483,
+        "wilson_95_ci": [
+          0.10251430933651487,
+          0.25430705593449265
+        ]
+      },
+      "unknown": {
+        "n": 11,
+        "correct": 0,
+        "accuracy": 0.0,
+        "wilson_95_ci": [
+          0.0,
+          0.2588329669680318
+        ]
+      }
+    },
+    "letta": {
+      "long_3_plus_months": {
+        "n": 298,
+        "correct": 66,
+        "accuracy": 0.2214765100671141,
+        "wilson_95_ci": [
+          0.17804281452917858,
+          0.27199959962900827
+        ]
+      },
+      "short_1_to_2_weeks": {
+        "n": 92,
+        "correct": 26,
+        "accuracy": 0.2826086956521739,
+        "wilson_95_ci": [
+          0.20075679302177488,
+          0.38188728927632143
+        ]
+      },
+      "unknown": {
+        "n": 11,
+        "correct": 5,
+        "accuracy": 0.45454545454545453,
+        "wilson_95_ci": [
+          0.2127127162245977,
+          0.719908462590678
+        ]
+      }
+    },
+    "zep": {
+      "long_3_plus_months": {
+        "n": 300,
+        "correct": 62,
+        "accuracy": 0.20666666666666667,
+        "wilson_95_ci": [
+          0.16469552636242532,
+          0.256055016755975
+        ]
+      },
+      "short_1_to_2_weeks": {
+        "n": 91,
+        "correct": 25,
+        "accuracy": 0.27472527472527475,
+        "wilson_95_ci": [
+          0.19355178327652994,
+          0.37414782288922926
+        ]
+      },
+      "unknown": {
+        "n": 10,
+        "correct": 2,
+        "accuracy": 0.2,
+        "wilson_95_ci": [
+          0.056682151454375246,
+          0.5098375284633583
+        ]
+      }
+    }
+  },
+  "cochran_q": {
+    "description": "Same 401 dialogues; test equality of marginal correct rates across mem0/letta/zep",
+    "statistic": 7.138686131386861,
+    "df": 2,
+    "p_value": 0.028174356303351935
+  },
+  "mcnemar_pairwise": {
+    "mem0_vs_letta": {
+      "n_both_fail": 269,
+      "n_first_ok_second_fail": 35,
+      "n_first_fail_second_ok": 60,
+      "n_both_ok": 37,
+      "p_value": 0.013378703026003939,
+      "statistic": 35.0,
+      "contrast": "mem0 (first) vs letta (second) in contingency labels",
+      "holm_adjusted_p": 0.040136109078011815,
+      "holm_reject_005": true
+    },
+    "mem0_vs_zep": {
+      "n_both_fail": 277,
+      "n_first_ok_second_fail": 35,
+      "n_first_fail_second_ok": 52,
+      "n_both_ok": 37,
+      "p_value": 0.08568897435916664,
+      "statistic": 35.0,
+      "contrast": "mem0 (first) vs zep (second) in contingency labels",
+      "holm_adjusted_p": 0.17137794871833328,
+      "holm_reject_005": false
+    },
+    "letta_vs_zep": {
+      "n_both_fail": 262,
+      "n_first_ok_second_fail": 50,
+      "n_first_fail_second_ok": 42,
+      "n_both_ok": 47,
+      "p_value": 0.4657074457730623,
+      "statistic": 42.0,
+      "contrast": "letta (first) vs zep (second) in contingency labels",
+      "holm_adjusted_p": 0.4657074457730623,
+      "holm_reject_005": false
+    }
+  },
+  "multiple_comparison": {
+    "method": "Holm-Bonferroni",
+    "family": "three pairwise McNemar tests"
+  }
+}
